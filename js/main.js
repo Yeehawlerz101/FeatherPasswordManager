@@ -67,7 +67,7 @@ function addPassword(service, password) {
   let copyButton = document.createElement('button');
   copyButton.type = 'button';
   copyButton.className = 'btn btn-outline-primary';
-  copyButton.innerHTML = '<img src="clipboard.svg" alt="">';
+  copyButton.innerHTML = '<img src="img/clipboard.svg" alt="">';
   copyButton.onclick = function() {
     let passField = this.parentElement.parentElement.childNodes[1].childNodes[0];
     passField.focus();
@@ -80,7 +80,7 @@ function addPassword(service, password) {
   let deleteButtonCell = document.createElement('td');
   let deleteButton = document.createElement('button');
   deleteButton.type = 'button';
-  deleteButton.innerHTML = '<img src="x-circle.svg" alt="">';
+  deleteButton.innerHTML = '<img src="img/x-circle.svg" alt="">';
   deleteButton.className = 'btn btn-outline-danger';
   deleteButton.onclick = function() {
     let deletedRow = this.parentElement.parentElement;
